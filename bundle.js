@@ -19,9 +19,10 @@
           });
         }
         displayMessage() {
+          let inputEl = document.querySelector("#message-input");
           let div = document.createElement("div");
           div.setAttribute("id", "message");
-          div.innerText = "This is a message displayed by JavaScript";
+          div.innerText = inputEl.value;
           this.mainContainerEl.append(div);
           console.log("Thanks for clicking me!");
         }
